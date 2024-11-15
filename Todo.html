@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Todo</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="flex justify-center items-center h-screen bg-gray-200">
+    <div class="w-full max-w-md bg-white rounded-lg shadow-lg p-6">
+        <h1 class="text-3xl font-bold mb-6 text-center text-gray-800">Lista de Tarefas</h1>
+        <div class="flex mb-4">
+            <input type="text" id="adicionar-tarefa"
+                class="flex-1 px-4 py-2 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Adicione um novo objetivo">
+            <button id="adicionar-tarefa-b"
+                class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-r-lg flex items-center">
+                Adicionar
+            </button>
+        </div>
+        <ul id="lista-tarefas" class="space-y-4">
+        </ul>
+        <div class="flex justify-between mt-6">
+            <button id="limpar-tudo" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">Apagar
+                Todos</button>
+            <div class="flex items-center">
+                <input type="checkbox" id="mostrar-completo" class="mr-2">
+                <label for="mostrar-completo" class="text-gray-700">Mostrar Completo</label>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
